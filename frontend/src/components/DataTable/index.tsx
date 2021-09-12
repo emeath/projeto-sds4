@@ -21,7 +21,7 @@ const DataTable = () => {
             .then(response => {
                 setPage(response.data)
             })
-    })
+    }, [])
 
     const changePage = (index: number) => {
         setActivePage(index);
